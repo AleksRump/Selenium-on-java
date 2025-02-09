@@ -1,0 +1,49 @@
+# Eclipse specific files
+.classpath
+.project
+.settings/
+
+# Maven target directory (compiled files)
+target/
+
+# Compiled Java classes
+*.class
+
+# JAR, WAR, and other package files
+*.jar
+*.war
+*.ear
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+*.pid
+hs_err_pid*
+
+# IDE-specific files (for IntelliJ and VS Code)
+.idea/
+*.iml
+.vscode/
+
+# Maven and Gradle-related files
+.mvn/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.next
+pom.xml.backup
+
+# Selenium WebDriver binaries
+chromedriver.exe
+chromedriver.log
+geckodriver.exe
+msedgedriver.exe
+operadriver.exe
+selenium-server-standalone.jar
+
+# Test output and reports
+test-output/
+surefire-reports/
+allure-results/
+allure-report/
+

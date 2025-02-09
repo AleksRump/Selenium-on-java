@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="4">  <!-- parallel="tests" запуск тестов паралельно thread-count="3" количество тестов запущ парапленльно -->
+  
+  <test name="Test Chrome">
+  <parameter name="browserName" value="Chrome"></parameter>  <!-- name browsert dla testa use -->
+    <classes>
+      <class name="testngg.Multiple_Browser_Parallel_Testing"/>  <!-- mame test kotoriy ispolzuetsa -->
+    </classes>
+  </test> 
+  
+  <test name="Test FireFox">
+  <parameter name="browserName" value="FireFox"></parameter>  <!-- name browsert dla testa use -->
+    <classes>
+      <class name="testngg.Multiple_Browser_Parallel_Testing"/>  <!-- mame test kotoriy ispolzuetsa -->
+    </classes>
+  </test> 
+  
+<!--  <test name="Test Opera">-->
+<!--  <parameter name="browserName" value="Opera"></parameter>   name browsert dla testa use -->
+<!--    <classes>-->
+<!--      <class name="testngg.Multiple_Browser_Parallel_Testing"/>   mame test kotoriy ispolzuetsa -->
+<!--    </classes>-->
+<!--  </test> -->
+  
+  <test name="Test Edge">
+  <parameter name="browserName" value="Edge"></parameter>  <!-- name browsert dla testa use -->
+    <classes>
+      <class name="testngg.Multiple_Browser_Parallel_Testing"/>  <!-- mame test kotoriy ispolzuetsa -->
+    </classes>
+  </test> 
+</suite> 
+
+<!--  // Chrome
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
+        driver.get("https://example.com");
+        driver.quit();
+
+        // Firefox
+        WebDriverManager.firefoxdriver().setup();
+        driver = new FirefoxDriver();
+        driver.get("https://example.com");
+        driver.quit();
+
+        // Edge
+        WebDriverManager.edgedriver().setup();
+        driver = new EdgeDriver();
+        driver.get("https://example.com");
+        driver.quit();
+
+        // Opera                                            // с 4 версии не поддерживает
+        WebDriverManager.chromedriver().setup();
+	    ChromeOptions operaOptions = new ChromeOptions();
+	    operaOptions.setBinary("C:\\Users\\shtil\\AppData\\Local\\Programs\\Opera\\opera.exe");
+        driver.get("https://example.com");
+        driver.quit();
+
+        // Safari (WebDriverManager не требуется для Safari)
+        driver = new SafariDriver();
+        driver.get("https://example.com");
+        driver.quit();
+
+-->
+

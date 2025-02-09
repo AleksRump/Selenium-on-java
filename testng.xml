@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="suite">
+    <!-- Секция listeners -->
+    <listeners>
+        <listener class-name="ListenersTestNG.Listeners"/>
+    </listeners>
+
+    <!-- Секция тестов -->
+    <test thread-count="5" name="TestFirst" parallel="classes">
+        <!-- Определение классов -->
+        <classes>
+            <class name="tests.TESTngDemoTestlogINportPO2varios2">
+                <methods>
+                    <include name="testlogIN2"/>
+                </methods>
+            </class>
+            <class name="tests.ExtentReportsWithTestNG">
+                <methods>
+                    <include name="testERtestNG"/>
+                </methods>
+            </class>
+            <class name="tests.ExtRepTestNGwithRagh"/>
+            <class name="ListenersTestNG.TestWithListenersTestNG"/>
+        </classes>
+    </test>
+</suite>

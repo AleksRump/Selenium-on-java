@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<listeners>
+<listener class-name="ListenersTestNG.Listeners"></listener>
+</listeners>
+
+  <test name="Test">
+    <classes>                                                  <!-- classes нужно писать каждый тест отдельно который ты хочешь что бы он запускал -->
+      <class name="ListenersTestNG.TestWithListenersTestNG"/>
+      <class name="ListenersTestNG.TestWithListenersTestNG2"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
